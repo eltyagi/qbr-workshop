@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Discovery Questions Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>AI Discovery Questions</h1>
+            <p class="subtitle">Customer conversation guide with progress tracking</p>
+        </header>
+
+        <div class="timer-section">
+            <div class="timer-display" id="timer">00:00</div>
+            <div class="timer-controls">
+                <button id="startBtn" class="btn btn-primary">Start</button>
+                <button id="pauseBtn" class="btn btn-secondary">Pause</button>
+                <button id="resetBtn" class="btn btn-tertiary">Reset</button>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-text">Progress</span>
+                <span class="progress-counter" id="progressCounter">0/0</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="questions-section">
+            <h2>Discovery Questions</h2>
+            <div class="questions-container" id="questionsContainer">
+                <!-- Questions will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="summary-section" id="summarySection" style="display: none;">
+            <div class="summary-card">
+                <h3>Session Complete! 🎉</h3>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <span class="stat-label">Time</span>
+                        <span class="stat-value" id="finalTime">00:00</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Questions Covered</span>
+                        <span class="stat-value" id="finalCount">0/0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
