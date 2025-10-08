@@ -168,12 +168,6 @@ body {
     position: relative;
 }
 
-.progress-fill::after {
-    display: none;
-}
-
-
-
 /* Questions Section */
 .questions-section {
     background: #ffffff;
